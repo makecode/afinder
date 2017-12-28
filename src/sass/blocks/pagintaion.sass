@@ -1,0 +1,37 @@
+.pagination
+
+  &__list
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+  &__el
+    position: relative
+    padding: 0 2px
+    margin: 0 4px
+    text-align: center
+    font-size: 15px
+
+    &:first-child
+      margin-right: 10px
+
+    &:last-child
+      margin-left: 10px
+
+    &.is-active
+      +bold
+      
+      &:after
+        position: absolute
+        content: ''
+        bottom: -3px
+        left: 0
+        width: 100%
+        height: 2px
+        background-color: #4d4d4d
+
+  &__link
+    color: #676767
+
+    &:hover
+      text-decoration: none

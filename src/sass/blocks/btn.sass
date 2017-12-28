@@ -1,0 +1,57 @@
+.btn
+  display: flex
+  flex-direction: row
+  text-align: center
+  flex-shrink: 0
+  width: 260px
+  height: 54px
+  line-height: 54px
+  color: #fff
+  background-color: #47be2e
+  font-size: 19px
+  white-space: nowrap
+  transition: all .3s ease-in-out
+  cursor: pointer
+  overflow: hidden
+
+  &:hover
+    text-decoration: none
+    background-color: #4bc631
+
+  &__text
+    width: 100%
+    text-align: center
+    color: #fff
+    text-transform: uppercase
+    +bold
+
+  &.is-red
+    background-color: #d63105
+
+    .ico
+      background-image: url('../img/ico-arrow-red.png')
+
+    &:hover
+      background-color: #e24014
+
+.btn-blue
+  padding: 0
+  width: 115px
+  height: 40px
+  line-height: 40px
+  color: #fff
+  background-color: #3481f3
+  font-size: 15px
+  text-transform: uppercase
+  transition: all .3s ease-in-out
+  border: none
+  +bold
+  
+  &:hover
+    background-color: #498ff7
+
+.btn-search
+  width: 45px
+  height: 45px
+  line-height: 45px
+  background-color: transparent

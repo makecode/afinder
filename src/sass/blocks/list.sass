@@ -1,0 +1,36 @@
+.list
+  display: flex
+  flex-direction: column
+
+  &__el
+    position: relative
+    padding-left: 20px
+    line-height: 17px
+
+  &.is-disc
+    margin-bottom: 30px
+    .list
+      &__el
+
+        &:after
+          position: absolute
+          top: 8px
+          left: 9px
+          content: ''
+          width: 3px
+          height: 3px
+          border-radius: 50%
+          background-color: #4d4d4d
+
+  &.is-alpha
+    margin-bottom: 5px
+    margin-left: 50px
+    list-style-type: lower-alpha
+
+    .list
+      &__el
+        padding-left: 3px
+        line-height: 1.4
+
+        &:after
+          display: none

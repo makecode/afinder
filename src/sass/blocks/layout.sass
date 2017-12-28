@@ -1,0 +1,60 @@
+.container
+  position: relative
+  margin: 0 auto
+  width: 1000px
+
+.main
+  flex: 1 1 auto
+  position: relative
+
+  &.is-general
+    padding: 200px 0
+    background: url('../img/main-bg.png') top center
+    background-repeat: no-repeat
+    background-color: #010102
+    background-size: cover
+    box-sizing: border-box
+
+.header
+  padding: 20px 0
+  border-bottom: 1px solid #eeeeee
+  box-sizing: border-box
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__right
+    display: flex
+    align-items: center
+
+.footer
+  position: relative
+  padding: 19px 0
+  border-top: 1px solid #eeeeee
+  box-sizing: border-box
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+  &__left
+    width: 42%
+
+  &__center
+    width: 42%
+
+  &__right
+    width: 15%
+
+  .logo
+
+    &__img
+      width: 126px
+
+  &.is-bg-black
+    background-color: #010102
+    border-top: transparent

@@ -1,0 +1,35 @@
+.nav
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    margin-right: 32px
+    letter-spacing: -.3px
+
+    &:last-child
+      margin-right: 0
+
+  &__link
+    text-transform: uppercase
+    font-size: 14px
+    color: #757575
+    +bold
+
+    &:hover,
+    &:active
+      color: #3481f3
+      text-decoration: none
+
+  &.is-footer
+
+    .nav
+
+      &__el
+        margin-right: 20px
+
+      &__link
+        font-size: 12px
+        text-transform: capitalize
+        +regular
