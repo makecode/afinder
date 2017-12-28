@@ -2283,11 +2283,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 'use strict';
 
 $(document).ready(function () {
+  var $banners = $('.banner');
   var $btnClose = $('.banner__close');
 
   $btnClose.map(function (index, btn) {
-    $(btn).click(function () {
+    $(btn).click(function (e) {
+      e.stopPropagation();
       $(btn).parent('div').toggleClass('is-hidden');
+    });
+  });
+
+  $banners.map(function (index, banner) {
+    $(banner).click(function () {
+      window.location = $(banner).attr('data-link');
     });
   });
 });
